@@ -1,3 +1,7 @@
+output "goodbye_path" {
+  value = local_file.goodbye.filename
+}
+
 output "file_path" {
   description = "Where the file was created"
   value       = local_file.hello.filename
